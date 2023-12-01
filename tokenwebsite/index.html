@@ -632,92 +632,94 @@
     </div>
 
   </div>
-  <head>
+ <head>
     <style>
+        /* Styles communs */
         .big-button {
-            
             background-image: linear-gradient(135deg, #ffd116 27%, #f7e61a 86%, #f8c124 92%, #ffd116 96%, #ffd116);
             border-radius: 8px;
-            
-            padding:40px 200px; 
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            border: none;
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            box-shadow: 12px 12px 0px 0px #000000;
+            border: 2px solid black;
             color: white;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px auto;
+            box-shadow: 12px 12px 0px 0px #000000;
             text-shadow:
                2px 2px 0px black,  /* Droite Bas */
                -2px -2px 0px black, /* Gauche Haut */
                2px -2px 0px black,  /* Droite Haut */
                -2px 2px 0px black,  /* Gauche Bas */
                       7px 7px 0px rgba(1, 1, 1, 1); /* Ombre */
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 70px;
-            margin: 40px 20px;
-            
-            
         }
 
         .intermediate-text {
-          color: black; /* Couleur du texte */
+            color: black;
             margin: 30px 0;
             font-size: 20px;
-            
         }
-    
+
         .small-button {
-            background-color: #ffffff; /* Couleur de fond */
-            border: black;
-            border-style: solid;
-            border-width: 2px;
+            background-color: #ffffff;
+            border: 2px solid black;
             border-radius: 5px;
-            color: rgb(0, 0, 0);
+            color: black; /* Couleur du texte modifiée */
             padding: 10px;
             text-align: center;
-            text-decoration: none;
             display: inline-block;
             font-size: 20px;
             margin: 4px 2px;
             cursor: pointer;
-            width: 150px; /* Largeur des petits boutons */
+            width: 150px;
+            text-shadow: none; /* Effet de texte retiré */
         }
-    
-        
+
+        /* Styles pour grands écrans */
+        @media (min-width: 768px) {
+            .big-button {
+                padding: 40px 200px;
+                font-size: 70px;
+            }
+        }
+
+        /* Styles pour écrans moyens */
+        @media (max-width: 767px) {
+            .big-button {
+                padding: 20px 100px;
+                font-size: 40px;
+            }
+        }
+
+        /* Styles pour petits écrans */
+        @media (max-width: 480px) {
+            .big-button {
+                padding: 10px 50px;
+                font-size: 30px;
+            }
+            .small-button {
+                width: 100px;
+                font-size: 15px;
+            }
+        }
     </style>
-    </head>
-    <body>
-    
-    <div class="big-button">JOIN THE CLUB
-     
-      <div class="intermediate-text"></div>
-      
-      <button class="small-button" style="
-      font-family: 'Poppins',Helvetica,Arial,Lucida, bold,sans-serif;
-      font-weight: 700;
-      color: black;
-      border-radius: 0px;
-      
-      padding:14px 20px;">
-      TELEGRAM
+</head>
+<body>
+
+<div class="big-button">JOIN THE CLUB
+    <div class="intermediate-text"></div>
+    <button class="small-button" style="font-family: 'Poppins',Helvetica,Arial,Lucida, bold,sans-serif; font-weight: 700;">
+        TELEGRAM
     </button>
-  </a>
-  
-    <button class="small-button" style="
-      font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
-      font-weight: 700;
-      color: black;
-      border-radius: 0px;
-      
-      padding:14px 20px;">
-      FOLLOW X
+    <button class="small-button" style="font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif; font-weight: 700;">
+        FOLLOW X
     </button>
-    </div>
-    
-    </body>
+</div>
+
+</body>
 
 
 
