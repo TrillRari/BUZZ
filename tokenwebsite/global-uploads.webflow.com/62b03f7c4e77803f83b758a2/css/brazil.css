@@ -1238,8 +1238,8 @@ a {
 .feature-wrap.a {
   margin-bottom: 100px;
   padding-top: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1DA1F2), color-stop(14%, rgba(0, 5, 32, 0)), color-stop(88%, rgba(0, 5, 32, 0)), to(#1DA1F2)), radial-gradient(circle farthest-side at 50% 50%, rgba(1, 253, 248, 0.1), rgba(1, 253, 248, 0));
-  background-image: linear-gradient(180deg, #1DA1F2, rgba(0, 5, 32, 0) 14%, rgba(0, 5, 32, 0) 88%, #1DA1F2), radial-gradient(circle farthest-side at 50% 50%, rgba(1, 253, 248, 0.1), rgba(1, 253, 248, 0));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000070), color-stop(14%, rgba(0, 5, 32, 0)), color-stop(88%, rgba(0, 5, 32, 0)), to(#00000070)), radial-gradient(circle farthest-side at 50% 50%, rgba(1, 253, 248, 0.1), rgba(1, 253, 248, 0));
+  background-image: linear-gradient(180deg, #00000070, rgba(0, 5, 32, 0) 14%, rgba(0, 5, 32, 0) 88%, #00000070), radial-gradient(circle farthest-side at 50% 50%, rgba(1, 253, 248, 0.1), rgba(1, 253, 248, 0));
 }
 
 .size1-text {
@@ -1691,7 +1691,7 @@ a {
 
 .sidebar-icon:hover {
   border-color: #02f4ff;
-  background-color: #1DA1F2;
+  background-color: #00000070;
 }
 
 .xxl-heading {
@@ -2263,7 +2263,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid rgba(192, 192, 211, 0.2);
-  background-color: #1DA1F2;
+  background-color: #00000070;
   -webkit-transform: translate3d(0px, 0px, 1000px);
   transform: translate3d(0px, 0px, 1000px);
   -webkit-transform-style: preserve-3d;
@@ -2372,7 +2372,7 @@ a {
   height: 80px;
   border-right: 1px solid rgba(192, 192, 211, 0.2);
   border-bottom: 1px solid rgba(192, 192, 211, 0.2);
-  background-color: #1DA1F2;
+  background-color: #00000070;
   -webkit-transform: translate3d(0px, 0px, 1111px);
   transform: translate3d(0px, 0px, 1111px);
   -webkit-transform-style: preserve-3d;
@@ -2777,7 +2777,7 @@ a {
 .road-connect {
   width: 10vw;
   height: 1px;
-  background-color: #1596c2;
+  background-color: #00000070;
 }
 
 .w100 {
@@ -2791,7 +2791,7 @@ a {
   height: 2vw;
   border-style: solid;
   border-width: 1px;
-  border-color: #1596c2;
+  border-color: #00000070;
   border-radius: 50%;
   -webkit-transform: translate(-48%, 0px);
   -ms-transform: translate(-48%, 0px);
@@ -2799,8 +2799,8 @@ a {
 }
 
 .black-to-blue {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(61%, #1DA1F2));
-  background-image: linear-gradient(180deg, #000, #1DA1F2 61%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(61%, #00000070));
+  background-image: linear-gradient(180deg, #000, #00000070) 61%);
 }
 
 .road-end {
@@ -2810,7 +2810,7 @@ a {
   height: 2vw;
   border-style: solid;
   border-width: 1px;
-  border-color: #1596c2;
+  border-color: #00000070;
   border-radius: 50%;
   -webkit-transform: translate(-48%, 0px);
   -ms-transform: translate(-48%, 0px);
@@ -2824,8 +2824,8 @@ a {
   z-index: 10;
   height: 30vh;
   margin-top: -8vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 32, 0)), color-stop(97%, #1DA1F2));
-  background-image: linear-gradient(180deg, rgba(0, 5, 32, 0), #1DA1F2 97%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 32, 0)), color-stop(97%, #00000070));
+  background-image: linear-gradient(180deg, rgba(0, 5, 32, 0), #00000070 97%);
 }
 
 .road-title {
@@ -2844,8 +2844,8 @@ a {
   top: 0px;
   width: 1px;
   height: 80vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1596c2), to(rgba(21, 150, 194, 0.47)));
-  background-image: linear-gradient(180deg, #1596c2, rgba(21, 150, 194, 0.47));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000070), to(rgba(21, 150, 194, 0.47)));
+  background-image: linear-gradient(180deg, #00000070, rgba(21, 150, 194, 0.47));
 }
 
 .how-to-back {
@@ -3609,7 +3609,7 @@ a {
 .outline-button.white-fill {
   grid-column-gap: 20px;
   background-color: #fff;
-  color: #1DA1F2;
+  color: #00000070;
 }
 
 .simple-title {
@@ -3666,7 +3666,7 @@ a {
   border-color: rgba(0, 0, 0, 0.38);
   border-radius: 30px;
   background-color: #fff;
-  color: #1DA1F2;
+  color: #00000070;
 }
 
 .form-text-field-2:focus {
@@ -3725,7 +3725,7 @@ a {
   background-color: #fff;
   -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
-  color: #1DA1F2;
+  color: #00000070;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -4310,7 +4310,7 @@ a {
 
 .tokenomics-item.total {
   position: relative;
-  border-color: #1596c2;
+  border-color: #00000070;
 }
 
 .tokenomics_wrap {
@@ -4965,7 +4965,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
     grid-column-gap: 10px;
-    background-color: #1DA1F2;
+    background-color: #00000070;
   }
 
   .right-nav {
@@ -5012,7 +5012,7 @@ a {
   }
 
   .link-cover-2 {
-    background-color: #1DA1F2;
+    background-color: #00000070;
   }
 
   .left-nav-2 {
