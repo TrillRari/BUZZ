@@ -1243,12 +1243,23 @@ a {
 }
 
 .size1-text {
-  margin-top: 20px;
-  margin-bottom: 25px;
-  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 65px;
   line-height: 1;
   font-weight: 700;
   white-space: normal;
+  text-shadow:
+  2px 2px 0px black,  /* Droite Bas */
+  -2px -2px 0px black, /* Gauche Haut */
+  2px -2px 0px black,  /* Droite Haut */
+  -2px 2px 0px black,  /* Gauche Bas */
+  7px 7px 0px rgba(1, 1, 1, 1); /* Ombre */
+
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+opacity: 1;
+transform-style: preserve-3d;
 }
 
 .feature-phone-wrap {
@@ -1472,7 +1483,7 @@ a {
 
 .bio-card {
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-right: 10px;
   border-radius: 10px;
 }
@@ -1870,7 +1881,7 @@ a {
 
 .sidebar-icon-2:hover {
   border-color: #d80202;
-  background-color: #d80202;
+  background-color: rgb(10, 71, 108);
 }
 
 .sidebar-icon-2.mob-menu-social {
@@ -2557,67 +2568,18 @@ a {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  border-color: #fff;
+  border-color: #000000;
   border-radius: 20px;
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
+  box-shadow: 12px 12px 0px 0px #000000;
   font-size: 20px;
   text-shadow: 1px 1px 10px #000;
 }
 
-.roadmap-quote-wrap.legendary {
-  position: relative;
-  overflow: hidden;
-  padding-left: 110px;
-  background-color: #f5dfa9;
-  text-align: center;
-}
 
-.roadmap-quote-wrap.white {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #0a1220;
-  text-align: center;
-}
 
-.roadmap-quote-wrap.a1 {
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
 
-.roadmap-quote-wrap.a2 {
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
-
-.roadmap-quote-wrap.a3 {
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
-
-.roadmap-quote-wrap.a4 {
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
-
-.roadmap-quote-wrap.a5 {
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
-
-.roadmap-quote-wrap.a6 {
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
-
-.roadmap-quote-text-wrap {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
 
 .milestone-heading {
   display: none;
@@ -2718,12 +2680,14 @@ a {
   text-align: right;
 }
 
+
+
 .roadmap-left.road-content {
   padding-right: 2.5vw;
   text-align: left;
 }
 
-.roadmap-right {
+.roadmap-right  {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2740,45 +2704,11 @@ a {
   padding-left: 2.5vw;
 }
 
-.roadmap-progress {
-  position: absolute;
-  top: 0px;
-  z-index: 0;
-  width: 1px;
-  height: 90%;
-  background-color: rgba(192, 192, 211, 0.2);
-}
 
-.roadmap-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 80rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 3vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
-.road-connect {
-  width: 10vw;
-  height: 1px;
-  background-color: #00000070;
-}
+
+
+
 
 .w100 {
   width: 100%;
@@ -2796,6 +2726,7 @@ a {
   -webkit-transform: translate(-48%, 0px);
   -ms-transform: translate(-48%, 0px);
   transform: translate(-48%, 0px);
+  text-align: center;
 }
 
 .black-to-blue {
@@ -2817,16 +2748,7 @@ a {
   transform: translate(-48%, 0px);
 }
 
-.blue-fade {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0px;
-  z-index: 10;
-  height: 30vh;
-  margin-top: -8vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 32, 0)), color-stop(97%, #00000070));
-  background-image: linear-gradient(180deg, rgba(0, 5, 32, 0), #00000070 97%);
-}
+
 
 .road-title {
   margin-right: 2vw;
@@ -2844,7 +2766,6 @@ a {
   top: 0px;
   width: 1px;
   height: 80vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000070), to(rgba(21, 150, 194, 0.47)));
   background-image: linear-gradient(180deg, #00000070, rgba(21, 150, 194, 0.47));
 }
 
@@ -2965,7 +2886,7 @@ a {
 }
 
 .blue {
-  color: #3b2ae5;
+  color: #bebebe;
 }
 
 .footer-section-01 {
@@ -4411,7 +4332,7 @@ a {
   }
 
   .bio-card {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .accordion-text-2 {
@@ -6671,7 +6592,71 @@ a {
     position: relative;
     z-index: 100;
   }
+
 }
+
+/* Dans votre fichier CSS */
+.card-name {
+  text-align: center;
+}
+
+.member-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.box-container {
+  justify-content: center; /* Centre horizontalement */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* S'assure que les boîtes s'enroulent sur des écrans plus petits */
+}
+
+.logo {
+  display: block; /* Permet de centrer l'image */
+  margin: 0 auto; /* Centrage de l'image */
+  max-width: 40%; /* Pour s'assurer que l'image ne dépasse pas la largeur de la boîte */
+  height: auto; /* Pour maintenir le ratio de l'image */
+}
+
+.box {
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif ;
+  text-align: center;
+  justify-content: center; /* Centre horizontalement */
+  width: 300px; /* Largeur ajustée pour le contenu */
+  padding: 30px; /* Espacement intérieur pour le contenu */
+  background-color: rgb(255, 234, 181);
+  border-radius: 10px;
+  border: 2px solid black; /* Contour noir */
+  box-shadow: 5px 5px 0px 0px #000000; /* Ombre noire */
+  font-size: 16px;
+  color: black; /* Texte en noir */
+  margin-bottom: 20px; /* Espacement entre les boîtes si elles s'enroulent */
+}
+
+.box p {
+  justify-content: center; /* Centre horizontalement */
+  margin: 10px 0; /* Espacement entre les paragraphes */
+}
+
+
+/* Vous pouvez ajouter d'autres styles ici si nécessaire */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #w-node-_0fe96e60-43f1-b61b-860d-1b18a1b0466a-75b758a3 {
   -ms-grid-column-span: 1;
@@ -7940,5 +7925,5 @@ a {
 }
 
 h1,h2,h3,.size1-text{
-  font-family: 'GangofThree';
+  font-family: 'Impact';
 }
