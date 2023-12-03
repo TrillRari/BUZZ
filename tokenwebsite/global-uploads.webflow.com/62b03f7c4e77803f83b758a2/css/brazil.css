@@ -5016,6 +5016,21 @@ transform-style: preserve-3d;
     left: 307px;
   }
 
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajuste les images uniformément */
+    max-width: 600px; /* Ajustez en fonction de la largeur souhaitée */
+    margin: auto; /* Centre le conteneur */
+  }
+  
+  .image-container img {
+    flex-basis: calc(33.333% - 10px); /* Trois images par ligne, ajustez la marge ici */
+    margin: 5px; /* Marge autour des images */
+    border: 3px solid black; /* Contour noir */
+    box-sizing: border-box; /* Inclut la bordure dans la largeur/hauteur de l'image */
+  }
+
   .how-to-image {
     width: 100%;
     height: 100%;
